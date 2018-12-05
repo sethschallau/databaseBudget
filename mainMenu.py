@@ -1,5 +1,9 @@
-test = raw_input()
-print(test)
+from createNew import createTheDatabase
+import mysql.connector as mariadb
+import re
 
-#test merging
-print("1) Create new ")
+print("1) Create a new Database ")
+
+inputChoice = raw_input()
+if inputChoice == "1":
+	createTheDatabase()
