@@ -16,3 +16,7 @@ Calculate percentages based off of this (nd, np)
 Create monthly budget based off of savings (nd, np)
 
 My programming "practices" are probably not industry standard, but this project is to test if I can take an idea from start to finish all while creating a modular program.
+
+
+How will data be tracked and kept tidy:
+	Spending will be sent individually to tables->columns that pertain to its category or person. The totals will be grabbed, both columns and tables, and then divided by each one individually. pretty basic math, I may do horribly in math but this is elementary :/
