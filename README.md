@@ -7,9 +7,12 @@ Technologies: Python, MariaDB
 
 How:
 
-Create multiple users. These will be different databases. Create new user will create new database table, deleting will delete the database. Each user will specify what the income is when entering and its saving level. Changing will prompt to update their saving settings for a new income type 
-Users must set their savings for each paycheck before entering, this will be stored in a table about the user.
+Install and setup mariaDB on the local system (not done, not in progress)
+Create the database for the project (done)
+Create tables to store this data: Savings, Spending, People, Categories, Total. These categories will be used to determine who and what money is being spent on. (done)
+Enter enter income and how much will be saved (nd, np)
+Enter spendings on who and what (nd, np)
+Calculate percentages based off of this (nd, np)
+Create monthly budget based off of savings (nd, np)
 
-User tables will tie their income tables. 
-
-User -> data/info -> money -> spending | saving (basically different accounts)
+My programming "practices" are probably not industry standard, but this project is to test if I can take an idea from start to finish all while creating a modular program.
