@@ -9,7 +9,9 @@ How:
 
 Install and setup mariaDB on the local system (not done, not in progress)
 Create the database for the project (done)
-Create tables to store this data: Savings, Spending, People, Categories, Total. These categories will be used to determine who and what money is being spent on. (done)
+Create tables to store this data: Savings, Spending, Total. These categories will be used to determine who and what money is being spent on. (done)
+Allow user to create new tables for each category and person (in progress)
+UNSURE
 Enter enter income and how much will be saved (nd, np)
 Enter spendings on who and what (nd, np)
 Calculate percentages based off of this (nd, np)

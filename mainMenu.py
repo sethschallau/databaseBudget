@@ -1,6 +1,5 @@
 from createNew import *
 import mysql.connector as mariadb
-import re
 
 #loop for the menu
 done = 0
@@ -13,6 +12,12 @@ while done == 0:
 		createTheDatabase()
 		createTables()
 		print("Setup Complete\n\n\n")
+	#calls the function to create a new table for people
+	elif inputChoice == "2":
+		#we want a funciton that returns all persons
+		print("Enter the name of a new person: ")
+		person = raw_input()
+		createPersonTable(person)
 	#exit
 	elif inputChoice == "6":
 		done = 1
