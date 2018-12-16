@@ -16,8 +16,8 @@ def createTables():
 	mariadb_connection = mariadb.connect(user='budget', password='schallau49', database='budget')
 	cursor = mariadb_connection.cursor()
 	#to find money, use spending money table - total spent
-	cursor.execute("CREATE TABLE IF NOT EXISTS tbl_spending(amount DOUBLE null)")
-	cursor.execute("CREATE TABLE IF NOT EXISTS tbl_totalSpent(amount DOUBLE null)")
+	cursor.execute("CREATE TABLE IF NOT EXISTS tbl_spending(amount FLOAT null)")
+	cursor.execute("CREATE TABLE IF NOT EXISTS tbl_totalSpent(amount FLOAT null)")
 
 	cursor.execute("SHOW TABLES")
 	result = cursor.fetchall()
@@ -29,10 +29,10 @@ def createTables():
 def createCategoryTable(catName):
 	mariadb_connection = mariadb.connect(user='budget', password='schallau49', database='budget')
 	cursor = mariadb_connection.cursor()
-	cursor.execute("CREATE TABLE IF NOT EXISTS cat_"+catName+"(amount DOUBLE null)")
+	cursor.execute("CREATE TABLE IF NOT EXISTS cat_"+catName+"(amount FLOAT null)")
 
 #creates a table for an individual to hold their spending
 def createPersonTable(perName):
 	mariadb_connection = mariadb.connect(user='budget', password='schallau49', database='budget')
 	cursor = mariadb_connection.cursor()
-	cursor.execute("CREATE TABLE IF NOT EXISTS per_"+perName+"(amount DOUBLE null)")
+	cursor.execute("CREATE TABLE IF NOT EXISTS per_"+perName+"(amount FLOAT null)")

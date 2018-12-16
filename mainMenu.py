@@ -1,4 +1,6 @@
 from createNew import *
+from returnData import *
+from spendIncome import *
 import mysql.connector as mariadb
 
 #loop for the menu
@@ -18,6 +20,15 @@ while done == 0:
 		print("Enter the name of a new person: ")
 		person = raw_input()
 		createPersonTable(person)
+	elif inputChoice == "3":
+		#we want a funciton that returns all persons
+		print("Enter the name of a new category: ")
+		person = raw_input()
+		createCategoryTable(person)
+	elif inputChoice == "4":
+		spendIncome()
 	#exit
 	elif inputChoice == "6":
+		returnPeople()
+		returnCategory()
 		done = 1
