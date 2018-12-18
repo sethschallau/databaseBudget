@@ -29,6 +29,4 @@ while done == 0:
 		spendIncome()
 	#exit
 	elif inputChoice == "6":
-		returnPeople()
-		returnCategory()
 		done = 1
