@@ -18,6 +18,7 @@ def createTables():
 	#to find money, use spending money table - total spent
 	cursor.execute("CREATE TABLE IF NOT EXISTS tbl_spending(amount FLOAT null)")
 	cursor.execute("CREATE TABLE IF NOT EXISTS tbl_totalSpent(amount FLOAT null)")
+	cursor.execute("CREATE TABLE IF NOT EXISTS tbl_saving(amount FLOAT null)")
 
 	cursor.execute("SHOW TABLES")
 	result = cursor.fetchall()
