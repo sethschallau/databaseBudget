@@ -19,9 +19,12 @@ Enter enter income and how much will be saved (DONE)
 
 Enter spendings on who and what (DONE)
 
-Find the total amount remaining in my spending (nd, np)
+Find the total amount remaining in my spending (DONE)
 
 Calculate percentages based off of the total and what/who money is spent on (nd, np)
+
+for each name in cat_ grab their total / totalSpent same for name
+display them all
 
 Create monthly budget based off of savings (nd, np)
 
