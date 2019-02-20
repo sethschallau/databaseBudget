@@ -16,4 +16,13 @@ Requirements:
 If anyone wanted to try this for some reason you would require a few pieces in place first:
 	MariaDB installed on your system
 	A user with the name and password hardcoded into the script (this should be changed eventualy)
-	Python 2.7 because I found the best support for what I needed on that version. 
+	Python 2.7 because I found the best support for what I needed on that version.
+
+
+Fresh Install:
+sudo apt install mariadb-server -y
+sudo apt install python -y
+sudo apt install python-pip -y
+sudo apt install default-libmysqlclient-dev -y
+pip install MySQL-python
+pip install mysql-connector
