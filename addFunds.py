@@ -14,11 +14,11 @@ def addFunds():
 		percentage = float(raw_input())
 		print("Is this correct? (y/n)")
 		answer = raw_input()
-
+	intoSpending = 0.0
 	#make the calculations to determine what goes into savings and spending
-	intoSpending = flt_paycheck * percentage
-	intoSpending = round(intoSpending,2)
-	intoSavings = flt_paycheck - intoSpending
+	intoSavings = flt_paycheck * percentage
+	intoSavings = round(intoSavings,2)
+	intoSpending = flt_paycheck - intoSavings
 	#turn the numbers back into strings so they are compatible with the cursor execution
 	intoSpending = str(intoSpending)
 	intoSavings = str(intoSavings)
